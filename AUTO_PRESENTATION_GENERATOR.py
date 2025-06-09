@@ -39,7 +39,7 @@ def create_movie_reviews_presentation():
     title.text_frame.paragraphs[0].font.color.rgb = title_color
     title.text_frame.paragraphs[0].font.bold = True
     
-    subtitle.text = "From Web Scraping to Machine Learning\n\nBogdan & Raul\nData Mining Course\nDecember 2024\n\n\"Transforming 63 movie reviews into strategic business intelligence\""
+    subtitle.text = "From Web Scraping to Machine Learning\n\nBogdan & Raul\nData Mining Course\nJune 2025\n\n\"Transforming 63 movie reviews into strategic business intelligence\""
     for paragraph in subtitle.text_frame.paragraphs:
         paragraph.font.size = Pt(20)
         paragraph.font.color.rgb = text_color
@@ -483,7 +483,7 @@ def create_html_presentation():
             <h2 style="text-align: center; color: #666;">From Web Scraping to Machine Learning</h2>
             <div style="text-align: center; margin-top: 40px;">
                 <p style="font-size: 1.5em;"><strong>Bogdan & Raul</strong></p>
-                <p>Data Mining Course | December 2024</p>
+                <p>Data Mining Course | June 2025</p>
                 <div class="highlight">
                     <em>"Transforming 63 movie reviews into strategic business intelligence"</em>
                 </div>
