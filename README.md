@@ -2,8 +2,8 @@
 
 **Team Members:** Bogdan & Raul  
 **Course:** Data Mining  
-**Institution:** [Your University]  
-**Date:** December 2024
+**Institution:** Universitatea Politehnica Timisoara  
+**Date:** Iunie 2025
 
 ## 📋 Project Overview
 
@@ -63,19 +63,19 @@ This project applies advanced data mining techniques to analyze movie review sen
 ## 📊 Key Results
 
 ### Dataset Statistics
-- **Movies Analyzed:** [X] movies from Rotten Tomatoes
-- **Reviews Processed:** [Y] individual reviews
-- **Average Review Length:** [Z] words
-- **Sentiment Distribution:** [A]% positive, [B]% negative, [C]% neutral
+- **Movies Analyzed:** 11 movies from Rotten Tomatoes
+- **Reviews Processed:** 63 individual reviews
+- **Average Review Length:** 12.3 words
+- **Sentiment Distribution:** 74.6% positive, 19.0% negative, 6.3% neutral
 
 ### Model Performance
-- **Best Classification Model:** [Model Name] with [X]% accuracy
-- **Cross-Validation Score:** [Y]% (±[Z]%)
-- **Clustering Quality:** Silhouette score of [A]
-- **Topics Discovered:** [B] distinct thematic topics
+- **Best Classification Model:** Naive Bayes with 94.7% accuracy
+- **Cross-Validation Score:** 91.1% (±8.3%)
+- **Clustering Quality:** Silhouette score of 0.506
+- **Topics Discovered:** 5 distinct thematic topics
 
 ### Business Insights
-- **Audience Segmentation:** [X] distinct audience clusters identified
+- **Audience Segmentation:** 7 distinct audience clusters identified
 - **Sentiment Drivers:** Key words that predict positive/negative reviews
 - **Topic Analysis:** Most discussed themes in movie reviews
 - **Marketing Implications:** Targeted messaging strategies for different segments
@@ -218,14 +218,13 @@ nltk.download('averaged_perceptron_tagger')
 
 ## 📧 Contact Information
 
-- **Bogdan:** [email@university.edu]
-- **Raul:** [email@university.edu]
-- **Course Instructor:** [Professor Name]
-- **Institution:** [University Name]
+- **Bogdan:** bogdan.chis@student.upt.ro
+- **Raul:** raul.ciurescu@student.upt.ro
+- **Course Instructor:** Cernazanu Cosmin
 
 ## 📜 License & Usage
 
-This project is submitted for academic evaluation in [Course Name]. The methodology and insights may be referenced with proper attribution.
+This project is submitted for academic evaluation in Data Mining. The methodology and insights may be referenced with proper attribution.
 
 ---
 

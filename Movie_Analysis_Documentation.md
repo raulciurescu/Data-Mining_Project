@@ -81,8 +81,8 @@ def advanced_text_cleaning(self, text):
 - Feature correlation matrix generation
 
 **Key Discoveries:**
-- Sentiment distribution: [X]% positive, [Y]% negative, [Z]% neutral
-- Review length-sentiment correlation: [correlation coefficient]
+- Sentiment distribution: 74.6% positive, 19.0% negative, 6.3% neutral
+- Review length-sentiment correlation: -0.299 correlation
 - Statistical significance testing (t-tests) validates findings
 - Clear patterns in subjectivity vs polarity relationships
 
@@ -92,7 +92,7 @@ def advanced_text_cleaning(self, text):
 - Box plots revealing sentiment variance by movie
 - Statistical summary overlays
 
-**Business Insight:** Longer reviews correlate with [positive/negative] sentiment, suggesting [interpretation of user engagement patterns].
+**Business Insight:** Longer reviews correlate with negative sentiment
 
 ---
 
@@ -109,8 +109,8 @@ tfidf_vectorizer = TfidfVectorizer(
 ```
 
 **Key Findings:**
-- **Positive sentiment indicators:** [top positive words]
-- **Negative sentiment indicators:** [top negative words]
+- **Positive sentiment indicators:** direction
+- **Negative sentiment indicators:** boring
 - **Bigram patterns:** Reveal common phrase structures
 - **Feature discrimination:** Clear separation between sentiment classes
 
@@ -129,7 +129,7 @@ tfidf_vectorizer = TfidfVectorizer(
 4. **SVM:** Maximum margin classification
 
 **Performance Results:**
-- **Best Model:** [Model name] with [X]% accuracy
+- **Best Model:** Naive Bayes with 94.7% accuracy
 - **Cross-validation:** 5-fold CV ensures reliability
 - **Feature importance:** Random Forest reveals key predictive terms
 - **Confusion matrix:** Detailed per-class performance analysis
@@ -140,7 +140,7 @@ tfidf_vectorizer = TfidfVectorizer(
 - Feature importance analysis provides interpretability
 - Statistical significance testing validates results
 
-**Business Impact:** Enables automated sentiment classification with [X]% accuracy, supporting real-time review monitoring systems.
+**Business Impact:** Enables automated sentiment classification with +25% improvement
 
 ---
 
@@ -152,7 +152,7 @@ tfidf_vectorizer = TfidfVectorizer(
 - **Analysis:** Correlation-based feature selection
 
 **Key Insights:**
-- **Length-sentiment correlation:** [coefficient value]
+- **Length-sentiment correlation:** -0.299
 - **Word-level predictors:** Specific terms strongly correlate with sentiment scores
 - **Feature ranking:** Top predictive features identified and validated
 
@@ -182,14 +182,10 @@ X_combined = np.hstack([
 ```
 
 **Results:**
-- **Optimal clusters:** [X] clusters identified
-- **Silhouette score:** [value] indicates high-quality clustering
+- **Optimal clusters:** 7 clusters identified
+- **Silhouette score:**  0.506 indicates high-quality clustering
 - **Cluster characteristics:** Each cluster shows distinct sentiment patterns
 
-**Cluster Analysis:**
-- **Cluster 1:** [characteristics and business interpretation]
-- **Cluster 2:** [characteristics and business interpretation]
-- **Cluster 3:** [characteristics and business interpretation]
 
 **Business Value:** Reveals distinct audience segments with different sentiment patterns, enabling targeted marketing strategies and personalized recommendations.
 
@@ -207,87 +203,18 @@ lda = LatentDirichletAllocation(
 )
 ```
 
-**Topic Discovery:**
-- **Optimal topics:** [X] topics identified via perplexity minimization
-- **Topic coherence:** Each topic shows thematically consistent word groups
-- **Document assignment:** Reviews mapped to dominant topics
-
-**Topic Interpretations:**
-- **Topic 1:** [Interpretation - e.g., "Story and Character Development"]
-- **Topic 2:** [Interpretation - e.g., "Visual Effects and Action"]
-- **Topic 3:** [Interpretation - e.g., "Acting and Performance"]
-
-**Cross-Analysis:**
-- **Topic-sentiment correlation:** Topics show varying sentiment patterns
-- **Most positive topic:** [Topic name] with [sentiment score]
-- **Most discussed topic:** [Topic name] with [X] reviews
-
 **Business Value:** Identifies what aspects audiences discuss most, enabling content creators to focus on elements that drive positive reception.
 
 ---
 
-## 🔍 **KEY INSIGHTS & DISCOVERIES**
-
-### **Statistical Findings**
-
-**1. Sentiment Distribution Insights**
-- **Overall sentiment:** [X]% positive, [Y]% negative, [Z]% neutral
-- **Statistical significance:** p < 0.05 for key comparisons
-- **Confidence intervals:** [range] for population sentiment estimates
-
-**2. Review Behavior Patterns**
-- **Length correlation:** [coefficient] between review length and sentiment
-- **Subjectivity patterns:** [insight about objective vs subjective reviews]
-- **Engagement indicators:** Longer reviews indicate [higher/lower] engagement
-
-**3. Movie Performance Indicators**
-- **Best performing movie:** [title] with [sentiment score]
-- **Most polarizing movie:** [title] with [high variance/standard deviation]
-- **Consensus favorites:** Movies with high sentiment and low variance
-
-### **Machine Learning Insights**
-
-**1. Predictive Capabilities**
-- **Classification accuracy:** [X]% for sentiment prediction
-- **Key predictive features:** [top features that drive classifications]
-- **Model reliability:** Cross-validation confirms consistent performance
-
-**2. Clustering Revelations**
-- **Audience segments:** [X] distinct groups with different sentiment patterns
-- **Segment characteristics:** [description of each cluster's behavior]
-- **Marketing implications:** Different segments respond to different messaging
-
-**3. Topic Analysis**
-- **Discussion themes:** [X] main topics emerge from review analysis
-- **Sentiment-topic correlation:** Some topics consistently more positive/negative
-- **Content insights:** What audiences care about most in movie reviews
-
-### **Business Intelligence**
-
-**1. Marketing Optimization**
-- **Target messaging:** Positive reviews emphasize [themes], negative reviews focus on [themes]
-- **Audience segmentation:** [X] distinct groups require different marketing approaches
-- **Content positioning:** Movies should highlight [aspects] based on topic analysis
-
-**2. Recommendation Systems**
-- **User profiling:** Clustering enables personalized recommendations
-- **Content similarity:** Topic modeling reveals thematic relationships
-- **Quality prediction:** Review patterns predict audience reception
-
-**3. Risk Assessment**
-- **Early warning indicators:** Review patterns predict overall reception
-- **Sentiment tracking:** Real-time monitoring enables rapid response
-- **Competitive analysis:** Compare performance against industry benchmarks
-
----
 
 ## 🚀 **BUSINESS RECOMMENDATIONS**
 
 ### **For Movie Studios**
 
 **1. Content Development**
-- **Focus areas:** Emphasize [themes from positive topic analysis]
-- **Risk mitigation:** Address common negative themes: [examples]
+- **Focus areas:** Emphasize direction
+- **Risk mitigation:** Address common negative themes: boring
 - **Quality indicators:** Monitor review patterns for early success signals
 
 **2. Marketing Strategy**
