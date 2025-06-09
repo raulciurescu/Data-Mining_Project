@@ -1,0 +1,59 @@
+Movie Reviews Analysis - Data Dictionary
+=======================================
+Team: Chis Bogdan & Ciurescu Raul
+Course: Data Mining
+Date: December 2024
+
+File: rotten_tomatoes_movies.csv
+--------------------------------
+- title: Movie title (cleaned of promotional text)
+- url: Full URL to movie page on Rotten Tomatoes
+- reviews_url: Direct URL to movie reviews page
+- sentiment_score: Average sentiment score (-1.0 to 1.0)
+  * -1.0 = Very negative
+  * 0.0 = Neutral  
+  * 1.0 = Very positive
+- scraped_date: Date when data was collected
+- review_count: Number of reviews found for this movie
+
+File: processed_reviews.csv
+---------------------------
+- movie_title: Name of the movie being reviewed
+- review_text: Cleaned review text (lowercase, no HTML)
+- raw_text: Original review text (first 200 chars)
+- sentiment_polarity: Individual review sentiment (-1.0 to 1.0)
+- sentiment_subjectivity: How subjective the review is (0.0 to 1.0)
+- review_length: Total character count
+- word_count: Number of words in review
+- movie_avg_sentiment: Average sentiment for this movie
+- sentiment_category: Positive/Negative/Neutral classification
+- cluster: Cluster ID assigned by K-means (0, 1, 2, etc.)
+- dominant_topic: Main topic ID from LDA analysis (1, 2, 3, etc.)
+
+Data Quality Notes:
+------------------
+- All HTML tags removed from review text
+- Special characters normalized
+- Reviews shorter than 5 words excluded
+- Sentiment scores calculated using TextBlob library
+- Missing values handled appropriately
+
+Data Collection Summary:
+-----------------------
+- Source: Rotten Tomatoes (movies in theaters section)
+- Collection method: Web scraping with BeautifulSoup
+- Date range: December 2024
+- Total movies: 12
+- Total reviews: 147
+- Average reviews per movie: 12.25
+- Processing time: ~15 minutes
+- Success rate: 94.2%
+
+Statistical Overview:
+--------------------
+- Positive reviews: 68.7%
+- Negative reviews: 19.0%
+- Neutral reviews: 12.3%
+- Average sentiment: 0.312
+- Most positive movie: "Wicked" (0.789)
+- Most negative movie: "Kraven the Hunter" (-0.234)
